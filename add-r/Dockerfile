@@ -12,13 +12,12 @@ RUN apt-get dist-upgrade -y
 RUN apt-get install -y software-properties-common
 
 ## Add CRAN repo to get current R
-RUN add-apt-repository "deb http://cran.studio.com/bin/linux/ubuntu $(lsb_release -cs)/"
+RUN add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu $(lsb_release -cs)/"
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 
 RUN apt-get install -y --no-install-recommends r-base r-base-dev r-recommended littler
 RUN ln -s /usr/share/doc/littler/examples/install.r /usr/local/bin/install.r
 
-## launched via cat Dockerfile | docker build -t ubuntu:latest-with-R -
 
 
 
