@@ -22,6 +22,9 @@ RUN apt-get dist-upgrade -y
 RUN apt-get install -y --no-install-recommends r-base r-base-dev r-recommended littler
 RUN ln -s /usr/share/doc/littler/examples/install.r /usr/local/bin/install.r
 
+## Install a few more things that are useful
+RUN apt-get install -y --no-install-recommends vim-tiny
+
 
 
 
