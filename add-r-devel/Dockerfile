@@ -1,6 +1,6 @@
 ## Emacs, make this -*- mode: makefile; -*-
-## start with the Ubuntu docker-ubuntu-r/latest which has R on top of the latest Ubuntu
-FROM eddelbuettel/docker-ubuntu-r:latest
+## start with the Ubuntu docker-ubuntu-r/add-r which has R on top of the latest Ubuntu
+FROM eddelbuettel/docker-ubuntu-r:add-r
 
 ## That's me
 MAINTAINER Dirk Eddelbuettel edd@debian.org
