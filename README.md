@@ -18,10 +18,11 @@ This repository is linked to
 [this automated build facility at Docker](https://registry.hub.docker.com/u/eddelbuettel/docker-ubuntu-r/)
 and one can retrieve the corresponding images via a standard `docker pull`.
 
-#### Open build issues
+### See Also
 
-* We are testing these on the inofficial i386 variant where the fuller
-specification create files that are larger than 2gb wh
+There is a corresponding 
+[Docker for R on Debian repo](https://github.com/eddelbuettel/docker-ubuntu-r) 
+I also maintain which has a few more builds.
 
 ### Author
 
