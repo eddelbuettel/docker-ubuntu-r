@@ -21,7 +21,7 @@ and one can retrieve the corresponding images via a standard `docker pull`.
 ### See Also
 
 There is a corresponding 
-[Docker for R on Debian repo](https://github.com/eddelbuettel/docker-ubuntu-r) 
+[Docker for R on Debian repo](https://github.com/eddelbuettel/docker-debian-r) 
 I also maintain which has a few more builds.
 
 ### Author
