@@ -11,6 +11,9 @@ We start from the latest Ubuntu release and then add:
 * add-r:  This image adds just the R executable. Other images below depend on it.
 * add-r-devel: This image adds a freshly-built R-devel version, as well as
 all tools required to build R-devel from source.
+* add-r-devel-san: This image builds R-devel from source using gcc/g++ 4.8
+with the Address Sanitizer configuration [described in Section 4.3.3 of the
+Writing R Extension manual](http://cran.rstudio.com/doc/manuals/r-devel/R-exts.html#Using-Address-Sanitizer).
 
 ### Docker Hub
 
