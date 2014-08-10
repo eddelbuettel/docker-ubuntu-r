@@ -19,11 +19,18 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 RUN apt-get update -qq
 RUN apt-get dist-upgrade -y
 
-RUN apt-get install -y --no-install-recommends r-base r-base-dev r-recommended littler
+## Now install R and littler, and create a link for littler in /usr/local/bin
+## We do this in different commands as each command leads to a different aufs layer
+RUN apt-get install -y --no-install-recommends r-base 
+RUN apt-get install -y --no-install-recommends r-base-dev 
+RUN apt-get install -y --no-install-recommends r-recommended littler
+RUN apt-get install -y --no-install-recommends littler
 RUN ln -s /usr/share/doc/littler/examples/install.r /usr/local/bin/install.r
 
 ## Install a few more things that are useful
 RUN apt-get install -y --no-install-recommends vim-tiny
+RUN apt-get install -y --no-install-recommends less
+RUN apt-get install -y --no-install-recommends wget
 
 
 
